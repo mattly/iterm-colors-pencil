@@ -1,0 +1,57 @@
+# designed to work well in light or dark mode.
+#
+# This version should work with an unpatched version of mutt.  I have not
+# tested it so please feel free to send bug reports or better, patches.
+#
+# You may source this into your mutt config like so:
+#
+#     source path/to/mutt-pencilcolors.muttrc
+#
+# === Defaults.. All Messages
+color	normal          default     default
+color   index           default     default     ~A
+# === Deleted
+color   index           black       red         ~D
+# === Unread
+color   index           brightblue  default     ~U
+# === Flagged
+color   index           red         default     ~F
+# === Large
+color   index           magenta     default "~z >100K"
+# === Tagged
+color   index           brightwhite red         ~T
+
+# viewer
+color	hdrdefault	magenta     default                 # default headers
+color   header      blue        default         "^From:"
+color   header      blue        default         "^Subject:"
+color   header      cyan        default         "^To:"
+
+color	quoted      cyan        default                 # quote colours
+color   quoted1     blue        default
+color   quoted2     green       default
+color   quoted3     magenta     default
+color   quoted4     red         default
+
+color	body		magenta     default       (https?|ftp)://[\-\.\+,/%~_:?&=\#a-zA-Z0-9]+
+color	body		green       default       [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+
+color	signature	blue        default                 # sigs
+color   search      red         black                   # highlight results
+
+color	indicator	brightwhite color12                 # currently highlighted message
+color	error		red         default                 # error messages
+color	status		brightwhite color8                  # status line
+color	tree		green       default                 # thread tree
+color   tilde       black       default                 # blank line padding
+
+color	body	    green default           "^gpg: Good signature from"
+color	body	    brightred default		"^gpg: Bad signature from"
+color	body	    brightred default		"^gpg: BAD signature from"
+color	body	    brightred default		"^gpg: Note: This key has expired!"
+color	body	    brightyellow default	"^gpg: WARNING: This key is not certified with a trusted signature!"
+color	body	    brightyellow default	"^gpg:          There is no indication that the signature belongs to the owner."
+color	body	    brightyellow default	"^gpg: can't handle these multiple signatures"
+color	body	    brightyellow default	"^gpg: signature verification suppressed"
+color	body	    brightyellow default	"^gpg: invalid node with packet of type"
+

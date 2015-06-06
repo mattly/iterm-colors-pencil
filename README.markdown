@@ -3,8 +3,11 @@
 A color scheme inspired by iA Writer.  Inspired by [@reedes][reedes]'s original
 [vim] version, I wanted it in the terminal, and a dark version as well.
 
+If you like this, please also check out my [original iTerm Theme, Farmhouse][iterm-farmhouse].
+
 [reedes]: https://github.com/reedes
 [vim]: https://github.com/reedes/vim-colors-pencil
+[iterm-farmhouse]: https://github.com/mattly/iterm-colors-farmhouse
 
 ## Screenshots
 
